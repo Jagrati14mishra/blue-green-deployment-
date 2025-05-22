@@ -24,6 +24,4 @@ jobs:
       uses: azure/setup-kubectl@v3
 
 
-    - name: Switch Service to Green
-      run: |
-        kubectl patch service myapp-service -p '{"spec":{"selector":{"app":"myapp","version":"green"}}}'
+    
