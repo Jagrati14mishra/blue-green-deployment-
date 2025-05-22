@@ -1,6 +1,6 @@
 name: Blue-Green Deployment
 
-on:
+on: 
   push:
     branches: [main]
 
