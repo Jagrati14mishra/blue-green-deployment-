@@ -25,7 +25,7 @@ jobs:
 
     - name: Deploy Green version
       run: |
-        kubectl apply -f k8s/green-deployment.yaml
+        kubectl apply -f blue-green-app/k8s/green-deployment.yaml
 
     - name: Switch Service to Green
       run: |
