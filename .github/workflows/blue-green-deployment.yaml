@@ -17,7 +17,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t jagratimishra1415/blue-green-deploy:latest ./app
+        docker build -t jagratimishra1415/blue-green-deploy:latest ./blue-green-app/app
         docker push jagratimishra1415/blue-green-deploy:latest
 
     - name: Set up kubectl
