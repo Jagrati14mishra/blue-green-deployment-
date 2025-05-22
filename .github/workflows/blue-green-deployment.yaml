@@ -23,9 +23,6 @@ jobs:
     - name: Set up kubectl
       uses: azure/setup-kubectl@v3
 
-    - name: Deploy Green version
-      run: |
-        kubectl apply -f blue-green-app/k8s/green-deployment.yaml
 
     - name: Switch Service to Green
       run: |
